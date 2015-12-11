@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title> Remixify - Developed by Team CAG </title>
+	<link href='css/bootstrap.css' rel='stylesheet'>
+	<link href='css/info.css' rel='stylesheet'>
+</head>
+<body>
+
+	<!--This is so-called title/navbar-->
+	<div class='nav navbar container-fluid text-center navbar-inverse'>
+		<div class='row'>
+		  <div class='col-md-8'> <h1 class='text-primary'> Remixify</h1> </div>
+		  <div class='col-md-4'> <h2 title="search new"><a href="#"><i style="color:#008000" class="glyphicon glyphicon-home"></i></a></h2> </div>
+		</div>
+	</div>
+
+	<!--This is the home/default page-->
+	<div class='container-fluid'>
+		<!--Below is the ROW that includes a search bar and buttons for groups: -->				
+			<div class='col-md-6' id="sidebar"> 
+				<!--This is search bar-->
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" id="searchQuery" class="form-control" placeholder="Type Here">
+					</div>	
+					<button type="submit" class="btn btn-default" id="searchbox">
+						<span class="glyphicon glyphicon-search" title="Click to search"></span>
+					</button> 		
+				</form>
+				<br/><br/><br/>
+				<div id="searchResults"> </div>
+			</div>
+			<!--Below is the buttons column, which inlcudes two buttons: "Group(s)", and "Create A New Group" -->
+			<div class="col-md-6 borderless" id="container">
+				<div id="groupsView" class="main padding-custom borderless"> 	
+					<!--First, the "Group(s)" button-->
+					<button type="button" class="btn btn-lg btn-primary" title="Displaying List of All Groups"> Group(s) </button>
+
+					<div class="padding-custom lead" id="groups"></div>
+
+					<!--Secondly, the "Create A New Group" button; this button triggers Modal-->
+					<button type="button" title="Create A New Group " class="btn btn-lg btn-success" id="newGroup" data-toggle="modal" data-target="#myModal" data-title="New Group">Create A New Group</button>
+				</div>		
+				
+				<div id="usersView">   <!-- previously it's id was usersView -->
+
+				<!-- Body content: Here all the group info would be replaced by Javascript +Instagram API calls-->
+					<button class='btn btn-md btn-danger' onclick="goBack()">Go Back</button>
+					<!--h2>Group: &emsp; Techies</h2-->
+					
+					<div id="users"></div>
+
+				<!-- This snippet below should go away when we implement userviews per Group functionality >
+					<ol class="text-left">
+						<li> 
+							<img class="img-responsive-media" src="https://scontent-yyz1-1.cdninstagram.com/hphotos-xta1/t51.2885-19/10838621_327333510789137_1000759803_a.jpg" alt="Gilad Penn Profile Picture" /></a>
+							<strong class="lead"> freeslugs </strong>  &emsp; &emsp; &emsp; 
+							<a href="https://www.instagram.com/freeslugs/" target="_blank"> Link To Profile</a>  &emsp;
+							<a href="https://www.instagram.com/p/uUGXForOJ1/?taken-by=freeslugs" target="_blank"> Recent Uploads</a>  &emsp; &emsp;
+							<span class="plus"><a href="#" title="Add This User To Another Group"><i id="addUserToAnotherGroup" style="color:#008000" class="glyphicon glyphicon-plus"></i></a></span> &emsp;
+							<span><a href="#" title="Remove This User From This Group"><i id="deleteUser"style="color:#FF0000" class="glyphicon glyphicon-trash"></i></a></span>
+						</li>
+						<li> 
+							<img class="img-responsive-media" src="https://scontent-yyz1-1.cdninstagram.com/hphotos-xpt1/t51.2885-19/10584547_814237882002205_244062481_a.jpg" alt="Ahmad Maruf Profile Picture" /></a>
+							<strong class="lead"> ahmad_maruf77</strong> &emsp; &emsp; &emsp; 
+							<a href="https://www.instagram.com/ahmad_maruf77/" target="_blank">Link To Profile</a> &emsp; &emsp;
+							<a href="https://www.instagram.com/p/-HfcAPsAp29YYm9DZ09oV74v9hQGPSgn63kJE0/?taken-by=ahmad_maruf77" target="_blank"> Recent Uploads</a> &emsp; &emsp;
+							<span class="plus" title="Add This User To Another Group"><a href="#"><i style="color:#008000" class="glyphicon glyphicon-plus"></i></a></span> &emsp;
+							<span><a href="#" title="Remove This User From This Group"><i style="color:#FF0000" class="glyphicon glyphicon-trash"></i></a></span>
+						</li>
+					</ol-->
+				</div>
+
+			</div>
+		</div>
+	
+	<!-- Common Modal HTML Code-->
+	<div id="myModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form role="form">
+					<div class="modal-body">				
+						<div class="form-group">
+							<label for="groupName" class="control-label">Name of the new group:</label>
+							<input type="text" class="form-control" required id="groupName">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+						<input type="submit" class="btn btn-success" value="Submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+		
+	<!-- End of the modal corresponding search results -->
+
+	<!-- Modal for addToGroup from results-->
+	<div id="addToGroupModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form role="form" onSubmit="addToGroup()">
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="groupName" class="control-label">Name of the new group:</label>
+							<input type="text" class="form-control" id="groupName">
+						</div>
+						<div class="dropdown">
+							<label for="groupNames">Add To An Existing Group</label>
+							<select class="form-control" id="groupNames">
+							<!-- list of group names go here :D -->
+							</select>
+						</div>
+					</div>		
+					<div class="f-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+						<input type="submit" class="btn btn-success" value="Submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>   
+	<!-- End of Common Modal HTML Code-->
+
+		<!-- Modal for editGroupModal from results-->
+		<div id="editGroupModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form role="form" onSubmit="editGroup()">
+						<div class="modal-body">
+							<div class="form-group">
+								<label for="newGroupName" class="control-label">Rename The Group:</label>
+								<input type="text" class="form-control" id="newGroupName">
+							</div>
+						</div>
+						<div class="f-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+							<input type="submit" class="btn btn-success" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>   
+	<!-- End of Common Modal HTML Code-->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/info.js"></script>
+</body>
+</html>
