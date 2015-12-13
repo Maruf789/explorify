@@ -3,16 +3,16 @@
 <html>
 	<head>
 	<title> Spotify Info </title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    	<script src="info.js"></script>
-    	<link rel="stylesheet" type="text/css" href="info.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    	<script src="script.js"></script>
+    	<link rel="stylesheet" type="text/css" href="styles.css">
     	<style type="text/css"></style>
     	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	</head>
 	<body>
 		<h1>			
-		<div class="text-right">
-			<button type="button" class="btn btn-default btn-sm">
+			<div class="text-right">
+				<button type="button" onclick="window.location.href='file:///Users/graciegilbert/Documents/index.html'" class="btn btn-default btn-sm">
           			<span class="glyphicon glyphicon-home"></span> Home
         		</button>
         	</div>
@@ -24,9 +24,9 @@
 
 				<div class="container">
 
-					<button type="button" class="btn btn-default btn-sm">
+					<button type="button" onclick="window.location.href='file:///Users/graciegilbert/Documents/index.html'" class="btn btn-default btn-sm">
           				<span class="glyphicon glyphicon-menu-left"></span> Back
-        				</button>
+        			</button>
         			<div class="panel panel-info">
         			<div class ="panel-heading"> 
 
@@ -34,44 +34,15 @@
         			</div>
 					<div class="panel-body">
 
-						<table class="table table-striped table-bordered">
+						<table id="search-res" class="table table-striped table-bordered">
     						<thead>
       							<tr>
-        							<th>Play Widget</th>
+        							<th>Play </th>
         							<th>More Info</th>
         
       							</tr>
     						</thead>
    							<tbody>
-   								<tr>
-   									<td>
-   										Possibility 1 for music player in table
-   										<br>
-   										<iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
-   									</td>
-   									<td>
-   										<button type="button" class="btn btn-info">Info</button>
-   									</td>
-   								</tr>
-   								<tr>
-   									<td>
-
-   										Possibility 2
-   										<br>
-   										Name: Mr. Brightside
-   										<br>
-   										Artist: The Killers
-   										<br>
-   										<audio controls>
-  											
-  											<source src="http://d318706lgtcm8e.cloudfront.net/mp3-preview/f454c8224828e21fa146af84916fd22cb89cedc6" type="audio/mpeg">
-												
-											</audio>
-   									</td>
-   									<td>
-   										<button type="button" class="btn btn-info">Info</button>
-   									</td>
-   								</tr>
  	
     						</tbody>
   						</table>
@@ -85,5 +56,3 @@
 
 		</div>
 	</body>
-
-</html>
