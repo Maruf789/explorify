@@ -1,0 +1,43 @@
+body {
+    padding: 20px;
+    
+}
+
+table {
+
+ 
+    overflow:scroll;
+    font-family: "Lucida Console", Monaco, serif;
+    table-layout:fixed; 
+    width:90px;
+    height: 300px;
+
+}
+
+div.panel-body{
+	height: 300px;
+	overflow:scroll;
+
+}
+
+tr{
+	width: 100px;
+	
+
+}
+td{
+	width: 100px;
+	height: 100px;
+}
+
+div.panel-heading {
+
+	font-family: "Lucida Console", Monaco, serif;
+	font-size: 13;
+
+}
+
+h1 div{
+
+	font-family: "Lucida Console", Monaco, serif;
+}
