@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+	<title> Remixify - Developed by Team CAG </title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="ahmad.js"></script>
+    <link rel="stylesheet" type="text/css" href="ahmad.css">
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- link href='homepage/cached.css' rel='stylesheet' -->
+</head>
+<body>
+
+	<!--This is the navbar with the titile and the home and back buttons-->
+		<h1>			
+			<button type="button" onclick="window.location.href='index.html'" class="btn btn-default btn-sm"> <span class="glyphicon glyphicon-menu-left"></span> Back </button>	
+			<div class="text-right">
+				<button type="button" onclick="window.location.href='index1.html'" class="btn btn-default btn-sm"> <span class="glyphicon glyphicon-home"></span> Home </button>
+        	</div>
+			<div class="text-center"> Remixify </div>
+		</h1>
+		<br/>
+		<!-- This is where the spotify player with the song will appear -->
+		<div>
+			<iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="100%" height="100px" frameborder="0" allowtransparency="true"></iframe>
+		</div>
+
+		<!-- This is the Track Info -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="container">
+        			<div class="panel panel-info">
+        				<div class ="panel-heading"> <strong> Track Info</strong></div>
+						<div class="panel-body">
+							<table id="search-res" class="table table-striped table-bordered">
+	   							<tbody>
+	      							
+	    						</tbody>
+	  						</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- This is the section for Artist Info -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="container">
+        			<div class="panel panel-info">
+        				<div class ="panel-heading"> <strong> Artist's Info</strong></div>
+						<div class="panel-body artist-panels">
+							<!-- This  is where we find the artist's image" -->
+							 <div class="row text-center">		
+							 	<img class="img-responsive-media" src="https://scontent-yyz1-1.cdninstagram.com/hphotos-xta1/t51.2885-19/10838621_327333510789137_1000759803_a.jpg" alt="Gilad Penn Profile Picture" />
+							</div>
+							<!-- Right underneath the Artist's image, This row is for Artist twitter and hottness, etc. -->
+							<div class="col-md-12 text-center" style="font-family: "Lucida Console", Monaco, serif;">
+								<h4 > <strong> Hottness: </strong></h4>	
+								<h4> <strong> Follow on Twitter: </strong> </h4>
+							</div> <br/>
+
+						<div class="row">
+							<table id="search-res" class="table table-striped table-bordered">
+	   							<tbody>
+	   								<thead>
+	      								<tr>
+	        								<th>Biography</th>
+	        								<th>Recent Blog Articles</th>
+	      								</tr>
+    								</thead>
+	      							<tr>
+	      								<th> {Biography Paragaraph - Javascript Needed} </th>
+	      								<th>{Each Blog Title (withe clickable link) and snippet of its blog post  - Javascript Needed} </th>
+	
+	      							</tr>
+	    						</tbody>
+	  						</table>
+							<table id="search-res" class="table table-striped table-bordered">
+	   							<tbody>
+	   								<thead>
+	      								<tr>
+	        								<th>Recently on News</th>
+	        								<th> Album Reviews </th>
+	      								</tr>
+    								</thead>
+	      							<tr>
+	      								<th>{ a list of Each Blog Article's Title (with clickable link) and snippet of its blog post  - Javascript Needed} </th>
+	      								<th>{A list of Each Album Name and its Review Title (with clickable link) - Javascript Needed} </th>
+	      							</tr>
+	    						</tbody>
+	  						</table>
+	  					</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- This is the section for Artist Info -->
+	<div class='container'>
+		<div class='nav text-left'>
+			<h3> <strong> Artist Info </strong> <h3>
+		</div>
+
+	<!-- This  is where we find the artist's image" -->
+		 <div class="row text-center">		
+		 	<img class="img-responsive-media" src="https://scontent-yyz1-1.cdninstagram.com/hphotos-xta1/t51.2885-19/10838621_327333510789137_1000759803_a.jpg" alt="Gilad Penn Profile Picture" />
+		</div>
+
+		<div class="row">
+		<!-- Right underneath the Artist's image, This row is for Artist twitter and hottness, etc. -->
+			<div class="col-md-12 text-center">
+				<h4> Hottness: </h4>	
+				<h4> Follow on Twitter: </h4>
+			</div>
+		</div>
+
+		<br/>  <br/>
+
+								<div class="row">
+							<table id="search-res" class="table table-striped table-bordered">
+	   							<tbody>
+	   								<thead>
+	      								<tr>
+	        								<th>Biography</th>
+	        								<th>Recent Blog Articles</th>
+	      								</tr>
+    								</thead>
+	      							<tr>
+	      								<th> {Biography Paragaraph - Javascript Needed} </th>
+	      								<th>{Each Blog Title (withe clickable link) and snippet of its blog post  - Javascript Needed} </th>
+	
+	      							</tr>
+	    						</tbody>
+	  						</table>
+							<table id="search-res" class="table table-striped table-bordered">
+	   							<tbody>
+	   								<thead>
+	      								<tr>
+	        								<th>Recently on News</th>
+	        								<th> Album Reviews </th>
+	      								</tr>
+    								</thead>
+	      							<tr>
+	      								<th>{ a list of Each Blog Article's Title (with clickable link) and snippet of its blog post  - Javascript Needed} </th>
+	      								<th>{A list of Each Album Name and its Review Title (with clickable link) - Javascript Needed} </th>
+	      							</tr>
+	    						</tbody>
+	  						</table>
+	  					</div>
+
+
+
+
+		<!-- Like Tabloid/Newspaper style, here we'll have one two columns, one for news and the other for blog, etc.-->
+
+	</div>
+
+	
+</body>
+</html>
