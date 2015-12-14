@@ -1,0 +1,9 @@
+Heuristic Analysis:
+1. Match between system and real world. E.g. home button, back button, everthing appears in a logical order, we don't use any technical speech in any part of our match between system and real world. 
+2. User control and freedom: Our home ad back button are emergency exits from unwanted states.
+3. Consistency and standard: We maintained c. & s. both in our platform conventions and design.
+4. Error prevention: We ELIMINATE error conditions. 
+5. Recognition: We add the player (in page 2), so that user doesn't have to remember the song when looking through search results.
+6. Aesthtic and minimalistic design:  We make it as simple and intuitive as possible.
+7. Accessibility: ?
+8. Help and documentation: Our app gives specific instructions to the user, even the novice ones. 
