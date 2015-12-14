@@ -1,0 +1,39 @@
+Team Name:
+Members: 
+
+Development Document
+
+Overall Process:
+	At first, we came up with the idea of searching for a song, and then giving users a option of 3 possible ways to remix it. We liked the idea, and even designed the page using out MyBalsimiq, but feedback from TAs that it would be too difficult as well as a closer look at the API deterred us from actually implementing this. The next time that we met, we decided instead to make an application that would allow users to get interesting information about tracks as well as read articles/blogs about the track’s artists as well. We first designed the three separate pages that we needed using MyBalsamiq after talking about what we wanted the user to be able to do. We decided on 3 pages because we thought it would be important to have the search results displayed on a separate page from the actual search, and for the info page to be a separate page from everything else. It was decided that each team member would be mostly responsible for one of the pages in terms of HTML/CSS - Christopher did the first page, Gracie the second, and Ahmad the third. Then, we worked together on the Javascript and on connecting the pages. Then, we split up work for the writings that needed to be turned in. Gracie and Christopher wrote the Use Cases/Personas, Gracie and Ahmad worked on the Development Document, Christopher worked on the User Manual, NOT SURE WHO WILL DO THE REST. For the video, HAVEN’T MADE YET.
+
+Target Users:
+	Our target group of users would be people more interested in technical details of specific tracks, or interested in finding out lots of information about the track’s artist - people like musicians, music reviewers, music enthusiasts. This app is not for casual listeners.
+	Our use cases are as follows:
+Persona 1: Chris Johnson is a college graduate who recently just lost his job. His girlfriend just broke up with him so he’s been hitting up the bar scene to meet more people. He loves music but doesn’t know too much about it. He figures that it would be a good conversation starter in any situation. The problem is he doesn’t know where he can go to for a central hub for all things music. 
+
+Scenario 1: Chris is at the Nomad Bar downtown and he starts talking to a girl. He brings up his favorite music/bands in the conversation (as planned) and she seems to be interested. He remembers everything he read through our app and starts talking more confidently about his passion for music. She is impressed by his vast knowledge and things seem to be clicking. He then remembers reading the news section in our app and remembers that his favorite band is having a concert in Brooklyn this weekend. He asks her to go with him and she agrees! Because of our app, Chris was able to share his passion for music and land himself a first date!
+
+Persona 2: Tom Smith is a junior in college. He loves rock and electronic music, and is the guitarist of a band. One of his favorite activities is covering and writing popular rock songs. He often draws inspiration from existing songs by using similar keys, tempo, chord progression, etc, when he is writing his own songs. However, he doesn’t have the best ear, and struggles with figuring out information such as the correct key of the songs on his own.
+
+Scenario 2: Tom Smith’s band has a show in a month. They want to cover a popular rock song, and also want to premiere one new original song. Tom already knows what song he wants to cover, but he is struggling to figure out specific information about how the song is played, and isn’t able to tell just by listening. Luckily, Tom has heard about an app that will provide him with the data he needs to know about the song. Tom opens, and types in the name of the song his band wants to cover into a search bar. The correct song is the first result, a fact he discovers after clicking on the 30 second preview of the song. He clicks the info button for the song, and is taken to the song information page. Information about the original song is displayed, including the song’s key/tempo/danceability/etc. He is also able to listen to the song by clicking on the play widget. He takes note of all of the song’s information, and is able to successfully figure out a good arrangement of the song. Then, he clicks on the Home button, and is returned back to the search bar. Tom knows that he has to write an original song for his band. He has recently been very inspired by a song he has been hearing on the radio, and wants to write a similar song. In order to imitate the feel of this song, he wants to write a song in the same key, and the same tempo, and in the same time signature. He searches this song, finds the correct song by listening to the song audios returned in the search results, and then clicks on the information button. From there, he learns all about the song’s specific information, and gets an idea of how he wants to write his own song. He also notices some articles about the artist on the information page, and finds one about the artist’s songwriting process that he finds inspiring. He also decides to follow the artist’s twitter handle, which is provided, so that he can keep up to date with any new releases the artist may have.
+
+
+
+Persona 3: Jill Williams is a recent college graduate who works as a high school teacher. She prefers to listen to classical music and jazz, but she feels that she only is able to understand pieces on a cursory level. She wants to start learning more about both music theory and of music history. 
+
+Scenario 3: Jill is listening to a classical music playlist, and hears  a piece that she loves. She wants to know more about this song, especially because it is in a very complex time signature and strange key that she is unable to figure out with her limited amount of musical knowledge. She decides that she wants to learn about this song, so she enters the app. Next, she types in the song name, and listens to the 30 sec preview of 4 songs in the search results until she finds the correct song. Then she clicks on the info button. On the info page, she learns all about the technical theory behind the song, but is also happy to see that there are artist biographies to help her to learn more about the history of the composer, as well as some really interesting articles that help her to better understand both the artist and classical music as a whole.
+
+Design Decisions:
+	We decided to go for a minimalist design that would be easy to use and intuitive, but that also would not look like Spotify. In order to achieve autonomy from Spotify, we used a color scheme that doesn’t include Spotify’s colors. and return results in a table that contains different information and formatting then a regular Spotify search. We decided to make three separate pages. 
+	The first page is ...
+	The second page is....
+	The third page is...
+
+	In order to make the website more like pages the user has visited before, as well as easier to use, we added a Home button and Back button to all the pages but the homepage (for consistency, we added it in the same place on each page). 
+	
+ 
+Prototyping and Testing Process:
+
+
+Software Engineering:
+We used HTML, Javascript, CSS, and Bootstrap. The APIs we used were Echo Nest, Spotify API, and then we used the Spotify Play Widget. 
