@@ -6,8 +6,12 @@
 function fillTable(response){
 	var artists,
 	name,
-	preview_url;
+	preview_url,
+    id;
 	arrayOfTracks = response.tracks.items;
+
+
+    console.log(response);
 
 	//var table_body = document.getElementById("search-res").getElementsByTagName("tbody");
 
@@ -18,6 +22,7 @@ function fillTable(response){
     	name = arrayOfTracks[i].name;
         artists = arrayOfTracks[i].artists[0].name;
     	preview_url = arrayOfTracks[i].preview_url;
+        id = arrayOfTracks[i].id;
     	tr = document.createElement("tr");
     	td_1 = document.createElement("td");
     	td_2 = document.createElement("td");
@@ -45,8 +50,12 @@ function fillTable(response){
         }*/
         //or maybe like this
         //var f = new Function('function code here');
+        
 
-        var i_button_text =  "<button onclick=\"openInfo\" type=\"button\" class=\"btn btn-info\">Info</button>"
+        //'<input type="button" onClick="gotoNode(\'' + result.name + '\')" />'
+
+        var i_button_text =  "<button onclick=\"openInfo(\'"+id+"\')\" type=\"button\" class=\"btn btn-info\">Info</button>"
+        //var i_button_text =  "<button onclick=\"openInfo()\" type=\"button\" class=\"btn btn-info\">Info</button>"
 
         $('#search-res').append("<tr><td>"+text_1+"</td><td>"+i_button_text+"</td></tr>");
 
@@ -61,8 +70,15 @@ function fillTable(response){
 
 }
 
-function openInfo(){
+function openInfo(track_id){
+
 	console.log("click");
+    //var track_id = ???;
+    sessionStorage.setItem("track", track_id);
+
+    
+    window.open("ahmad.html","_self");
+
 }
 
 
@@ -72,7 +88,7 @@ function getTableInfo(searchTerm){
     var parameters = {
 	url: 'https://api.spotify.com/v1/search',
 	data: {
-	    q: searchTerm,
+	    q: searchTerm,//"Kanye",//searchTerms,
 	    type: 'track'
 	},
 	success: fillTable
