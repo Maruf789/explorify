@@ -1,3 +1,22 @@
+body {
+    padding: 20px;
+    background: #FCFCFC;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(252, 252, 252);
+}
+
+h1 div{
+
+  font-family: "Lucida Console", Monaco, serif;
+}
 .main {
   margin: 20px 50px;
   border: 1px solid;
@@ -5,6 +24,40 @@
 .main * {
   margin: 0 auto;
   display: block;
+}
+
+table {
+
+ 
+    overflow:scroll;
+    font-family: "Lucida Console", Monaco, serif;
+    table-layout:fixed; 
+    width:90px;
+    height: 300px;
+
+}
+
+div.panel-body{
+  height: 300px;
+  overflow:scroll;
+
+}
+
+tr{
+  width: 100px;
+  
+
+}
+td{
+  width: 100px;
+  height: 100px;
+}
+
+div.panel-heading {
+
+  font-family: "Lucida Console", Monaco, serif;
+  font-size: 13;
+
 }
 
 .custom-margin{
@@ -24,8 +77,9 @@
 
 .img-responsive-media {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: auto;
+  border-radius: 100%
 }
 
 .img-responsive-profile {
@@ -40,6 +94,29 @@
   padding-bottom: 10px;
   padding-left: 10px;
 }
+
+#player-style {
+  height: 100px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#back-button {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #FCFCFC;
+}
+
+#home-button {
+  color: #FCFCFC;
+}
+
+#home-button h2 {
+  color: black;
+}
+
 
 .borderless {
     border: none !important;
@@ -74,4 +151,17 @@ div.panel-heading {
 h1 div{
 
 	font-family: "Lucida Console", Monaco, serif;
+}
+
+artist-panel {
+  overflow-x: hidden;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    margin-top: -100px;
+    padding-top: 100px;
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    will-change: overflow;
 }
