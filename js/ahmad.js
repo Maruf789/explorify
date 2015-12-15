@@ -117,7 +117,7 @@ function getHotttnesss(track_id){
             hotttnesss = parseFloat(Math.round((response.response.artist.hotttnesss) * 10)).toFixed(1);
             console.log("Artists's hotttnesss: " + hotttnesss);
 
-            $('#hotttnesss').append("<strong> Hotttness: &nbsp;" + hotttnesss + "&nbsp; </strong) (On A Scale To 10)");
+            $('#hotttnesss').append("<strong> Hotttness: &nbsp;" + hotttnesss + "&nbsp; </strong) (On A Scale 1 to 10)");
         }
     });
 }
@@ -187,7 +187,6 @@ function getTwitter(track_id){
         }
     });
 }
-
 
 //API call for Artist's Biography
 function getBiography(track_id){
@@ -259,7 +258,6 @@ function getReviews(track_id){
     });
 }
 
-
 //API call for a Recent News on the Artist + Reviews (from the previous getReviews() method)
 function getNewsReviews(track_id){
     getRegTrackInfo(track_id);
@@ -287,16 +285,10 @@ function getNewsReviews(track_id){
     });
 }
 
-
-
 function init(){
 	var track_id = sessionStorage.getItem("track");
 	getTrackInfo(track_id);
 	//console.log(track_id);
-
-
-
-
 }
 
 $(document).ready(init);
