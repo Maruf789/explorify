@@ -12,9 +12,7 @@ function getRegTrackInfo(track_id){
             artist_id = response.artists.id;
         }
     });
-
 }
-
 
 //API call for Spotify Song Player  (30s Preview)
 function getPlayer(track_id){
@@ -39,22 +37,7 @@ function getPlayer(track_id){
     });
 }
 
-
-
-//API call for track info
-function getRegTrackInfo(track_id){
-	$.ajax({
-    	type: "GET",
-    	url:  "https://api.spotify.com/v1/tracks/"+track_id,
-    	success:function(response){
-    		album = response.album.name;
-    		pop = response.popularity;
-            artist_id = response.artists.id;
-    	}
-    });
-
-}
-
+//API Call for Track Info Panel (includes all acoustic measurements, and track details)
 function getTrackInfo(track_id){
 	getRegTrackInfo(track_id);
 
