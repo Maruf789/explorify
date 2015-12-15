@@ -1,1 +1,2 @@
-# remixify
+# Explorify
+

@@ -27,8 +27,6 @@ h1 div{
 }
 
 table {
-
- 
     overflow:scroll;
     font-family: "Lucida Console", Monaco, serif;
     table-layout:fixed; 
@@ -98,8 +96,8 @@ div.panel-heading {
 #player-style {
   height: 100px;
   width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 #back-button {
@@ -129,6 +127,10 @@ table {
     table-layout:fixed; 
     width:90px;
 
+}
+
+thead {
+  height: 50px;
 }
 
 tr{
