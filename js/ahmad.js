@@ -21,7 +21,7 @@ function getRegTrackInfo(track_id){
     // return deferred.promise();
 }
 
-//API call for Spotify Song Player  (30s Preview)
+//API call for Spotify Song Player  (Full Song)
 function getPlayer(track_id){
     $('#player').append("<iframe src=\"https://embed.spotify.com/?uri=spotify:track:"+track_id+"\" width=\"100%\" height=\"100px\" frameborder=\"0\" allowtransparency=\"true\"></iframe>");
 }
