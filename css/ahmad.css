@@ -91,13 +91,13 @@ div.panel-heading {
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-}
+;
 
-.player-style {
+.player-style4{
   height: 100px;
   width: 100%;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #back-button {
