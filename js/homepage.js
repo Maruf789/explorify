@@ -55,6 +55,6 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault();
     var id = document.getElementById('query').value;//document.getElementById("search-form").id;
     sessionStorage.setItem("searcht", id);
-    window.open("index.html","_self");
+    window.open("page2.html","_self");
     //searchAlbums(document.getElementById('query').value);
 }, false);
