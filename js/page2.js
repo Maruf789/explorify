@@ -78,7 +78,7 @@ function openInfo(track_id){
     sessionStorage.setItem("track", track_id);
 
     
-    window.open("ahmad.html","_self");
+    window.open("page3.html","_self");
 
 }
 
