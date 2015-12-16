@@ -2,19 +2,19 @@
 
 
 
-
+//fills the table with search results
+//gives users a song preview and button for info pg
 function fillTable(response){
 	var artists,
 	name,
 	preview_url,
-    id;
+	id;
 	arrayOfTracks = response.tracks.items;
 
 
     console.log(response);
 
-	//var table_body = document.getElementById("search-res").getElementsByTagName("tbody");
-
+	
 	var length;
 	length = response.tracks.items.length;
 
@@ -70,6 +70,7 @@ function fillTable(response){
 
 }
 
+//store the track id so it can be used on other pages later
 function openInfo(track_id){
 
 	console.log("click");
@@ -82,7 +83,7 @@ function openInfo(track_id){
 }
 
 
-
+//create table after making call to Spotify API for search results
 function getTableInfo(searchTerm){
 	console.log("here");
     var parameters = {
